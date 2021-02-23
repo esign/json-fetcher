@@ -1,5 +1,5 @@
 {
-  "name": "json-fetcher",
+  "name": "json-fetcher-socials",
   "version": "1.0.0",
   "description": "NPM package for managing data from social media API.",
   "main": "index.js",
