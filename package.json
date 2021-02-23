@@ -1,0 +1,20 @@
+{
+  "name": "json-fetcher",
+  "version": "1.0.0",
+  "description": "NPM package for managing data from social media API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomascoppein/jsonFetcher.git"
+  },
+  "keywords": [],
+  "author": "Thomas Coppein",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thomascoppein/jsonFetcher/issues"
+  },
+  "homepage": "https://github.com/thomascoppein/jsonFetcher#readme"
+}
