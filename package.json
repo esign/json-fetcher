@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thomascoppein/jsonFetcher.git"
+    "url": "git+https://github.com/thomascoppein/json-fetcher.git"
   },
   "keywords": [
     "npm",
@@ -23,12 +23,12 @@
   "author": "Thomas Coppein",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/thomascoppein/jsonFetcher/issues"
+    "url": "https://github.com/thomascoppein/json-fetcher/issues"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@thomascoppein"
   },
-  "homepage": "https://github.com/thomascoppein/jsonFetcher#readme",
+  "homepage": "https://github.com/thomascoppein/json-fetcher#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
