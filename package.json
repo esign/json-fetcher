@@ -25,6 +25,9 @@
   "bugs": {
     "url": "https://github.com/thomascoppein/jsonFetcher/issues"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@thomascoppein"
+  },
   "homepage": "https://github.com/thomascoppein/jsonFetcher#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
