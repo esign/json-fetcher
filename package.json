@@ -20,13 +20,13 @@
     "json",
     "fetcher"
   ],
-  "author": "Thomas Coppein",
+  "author": "thomascoppein",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/thomascoppein/json-fetcher/issues"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@thomascoppein"
+    "registry": "https://npm.pkg.github.com/"
   },
   "homepage": "https://github.com/thomascoppein/json-fetcher#readme",
   "devDependencies": {
