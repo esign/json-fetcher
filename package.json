@@ -1,8 +1,8 @@
 {
-  "name": "json-fetcher-socials",
-  "version": "1.0.0",
+  "name": "json-fetcher",
+  "version": "0.0.1",
   "description": "NPM package for managing data from social media API.",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
     "test": "mocha --require babel-core/register",
     "build": "npm run lint && babel ./src -d ./lib",
@@ -13,9 +13,15 @@
     "type": "git",
     "url": "git+https://github.com/thomascoppein/jsonFetcher.git"
   },
-  "keywords": [],
+  "keywords": [
+    "npm",
+    "node",
+    "javascript",
+    "json",
+    "fetcher"
+  ],
   "author": "Thomas Coppein",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/thomascoppein/jsonFetcher/issues"
   },
