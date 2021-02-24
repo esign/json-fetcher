@@ -1,7 +1,7 @@
 {
-  "name": "@thomascoppein/json-fetcher",
-  "version": "0.0.3",
-  "description": "NPM package for managing data from social media API.",
+  "name": "@esign/json-fetcher",
+  "version": "0.0.4",
+  "description": "NPM package for managing data from an API.",
   "main": "build/index.js",
   "scripts": {
     "test": "mocha --require babel-core/register",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thomascoppein/json-fetcher.git"
+    "url": "git+https://github.com/esign/json-fetcher.git"
   },
   "keywords": [
     "npm",
@@ -23,12 +23,12 @@
   "author": "thomascoppein",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/thomascoppein/json-fetcher/issues"
+    "url": "https://github.com/esign/json-fetcher/issues"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@thomascoppein"
+    "registry": "https://npm.pkg.github.com/@esign"
   },
-  "homepage": "https://github.com/thomascoppein/json-fetcher#readme",
+  "homepage": "https://github.com/esign/json-fetcher#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
