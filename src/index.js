@@ -6,15 +6,14 @@ export default class JsonFetcher {
     this.options = options;
     this.element = document.querySelector(this.options.element);
     this.template = document.querySelector(this.options.template)
+      || this.element.querySelector('.js-json-fetcher__template')
       || this.element.querySelector('.json-fetcher__template');
     this.api = this.options.api || this.element.dataset.api;
     this.keys = this.options.keys || this.element.dataset.keys.split(';');
-    if (this.api && this.element && this.template) {
+    if (this.api && this.element && this.template && this.keys) {
       this.init();
     } else {
-      console.error(
-        'JsonFetcher error - Element, template or api is not defined',
-      );
+      console.error('JsonFetcher error - Element, template, keys or api is not defined');
     }
   }
 
@@ -41,18 +40,12 @@ export default class JsonFetcher {
             data = data[keyParts[index]];
             index += 1;
           }
-          templateClone.innerHTML = templateClone.innerHTML.replace(
-            `__${key}__`,
-            data,
-          );
+          templateClone.innerHTML = templateClone.innerHTML.replace(`__${key}__`, data);
         } catch (error) {
           this.printError(error);
         }
       });
-      templateClone.innerHTML = templateClone.innerHTML.replace(
-        'data-src',
-        'src',
-      );
+      templateClone.innerHTML = templateClone.innerHTML.replace('data-src', 'src');
       this.element.appendChild(templateClone.children[0]);
     });
     this.template.parentNode.removeChild(this.template);

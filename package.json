@@ -2,7 +2,7 @@
   "name": "@esign/json-fetcher",
   "version": "1.0.4",
   "description": "NPM package for managing data from an API.",
-  "main": "build/index.js",
+  "main": "lib/",
   "scripts": {
     "test": "mocha --require babel-core/register",
     "build": "npm run lint && babel ./src -d ./lib",
