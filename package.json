@@ -1,12 +1,13 @@
 {
   "name": "@esign/json-fetcher",
-  "version": "1.0.4",
+  "version": "1.1.2",
   "description": "NPM package for managing data from an API.",
   "main": "lib/",
   "scripts": {
     "test": "mocha --require babel-core/register",
     "build": "npm run lint && babel ./src -d ./lib",
     "lint": "eslint ./src",
+    "pub": "npm publish --access public",
     "prepublishOnly": "npm run build"
   },
   "repository": {

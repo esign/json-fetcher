@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 // Code
 import 'whatwg-fetch';
 
