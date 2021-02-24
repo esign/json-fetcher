@@ -2,12 +2,20 @@
 import 'whatwg-fetch';
 
 export default class JsonFetcher {
-  constructor(element) {
-    this.element = element;
-    this.template = element.querySelector('.json-fetcher__template');
-    this.api = element.dataset.api;
-    this.keys = element.dataset.keys.split(';');
-    this.init();
+  constructor(options) {
+    this.options = options;
+    this.element = document.querySelector(this.options.element);
+    this.template = document.querySelector(this.options.template)
+      || this.element.querySelector('.json-fetcher__template');
+    this.api = this.options.api || this.element.dataset.api;
+    this.keys = this.options.keys || this.element.dataset.keys.split(';');
+    if (this.api && this.element && this.template) {
+      this.init();
+    } else {
+      console.error(
+        'JsonFetcher error - Element, template or api is not defined',
+      );
+    }
   }
 
   init() {
@@ -24,7 +32,7 @@ export default class JsonFetcher {
   parseResults(json) {
     json.data.forEach((item) => {
       const templateClone = this.template.cloneNode(true);
-      this.keys.forEach((key) => {
+      [...this.keys].forEach((key) => {
         try {
           const keyParts = key.split('.');
           let index = 0;
