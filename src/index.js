@@ -22,7 +22,7 @@ export default class JsonFetcher {
   }
 
   parseResults(json) {
-    json.forEach((item) => {
+    json.data.forEach((item) => {
       const templateClone = this.template.cloneNode(true);
       this.keys.forEach((key) => {
         try {

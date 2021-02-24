@@ -1,6 +1,6 @@
 {
   "name": "@thomascoppein/json-fetcher",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "NPM package for managing data from social media API.",
   "main": "build/index.js",
   "scripts": {
