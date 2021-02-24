@@ -7,6 +7,7 @@ export default class JsonFetcher {
     this.template = element.querySelector('.json-fetcher__template');
     this.api = element.dataset.api;
     this.keys = element.dataset.keys.split(';');
+    this.init();
   }
 
   init() {
