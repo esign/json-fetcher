@@ -1,2 +1,3 @@
 # jsonFetcher
-NPM package for managing data from social media API.
+
+NPM package for managing data from an API.
